@@ -1,0 +1,44 @@
+@import "./variable";
+@import "./mixin";
+@font-face {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Rubik"), local("Rubik"),
+    url("../font/Rubik/Rubik-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Rubik"), local("Rubik"),
+    url("../font/Rubik/Rubik-Regular.ttf") format("truetype");
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", "Segoe UI", "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", serif, serif;
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: $color__gray;
+  transition: 0.2s;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.margin-select {
+  margin-right: 1vw;
+}

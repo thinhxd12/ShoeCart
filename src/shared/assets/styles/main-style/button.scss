@@ -1,0 +1,62 @@
+.shop__item__button {
+  cursor: pointer;
+  background-color: $color__yellow;
+  @include style-text(700, 14px, 14px, $color__black);
+  width: auto;
+  height: 46px;
+  min-width: 46px;
+  padding: 16px 20px;
+  border-radius: 100px;
+  transition: background-color 0.25s ease;
+  transition: box-shadow 0.25s ease;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #f8d43f;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.shop__item__button__check {
+  cursor: default;
+  background-color: $color__yellow;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart__count__button {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  @include style-text(700, 16px, 28px, $color__black);
+  background-color: #eee;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.cart__remove__button {
+  cursor: pointer;
+  background-color: $color__yellow;
+  @include style-text(700, 14px, 14px, $color__black);
+  width: auto;
+  height: 28px;
+  width: 28px;
+  border-radius: 100%;
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: #f8d43f;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+}
